@@ -1,0 +1,28 @@
+package service;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+
+public class AdminService {
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/freelancer_tracker";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "2830@412Ps";
+
+    public int getActiveUserCount() {
+        int count = 0;
+        String query = "SELECT COUNT(*) FROM users WHERE status = 'active'";
+        try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+             PreparedStatement stmt = conn.prepareStatement(query);
+             ResultSet rs = stmt.executeQuery()) {
+            if (rs.next()) {
+                count = rs.getInt(1);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return count;
+    }
+}
