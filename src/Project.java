@@ -315,8 +315,7 @@ public class Project {
         {
             System.out.println("\n======== WELCOME TO THE ADMIN PANEL ========\n");
             System.out.println("1. View all Users");
-            System.out.println("2. Delete a User");
-            System.out.println("3. View all Projects User-Wise");
+            System.out.println("3. View all Projects controller.User-Wise");
             System.out.println("4. View all Work Sessions");
             System.out.println("5. Logout");
 

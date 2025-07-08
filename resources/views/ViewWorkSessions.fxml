@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="535.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewUsersController">
+<AnchorPane prefHeight="535.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewWorkSessionsController">
     <children>
         <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <top>
@@ -110,9 +110,9 @@
                                     </font>
                                     <graphic>
                                         <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../images/project.png" />
-                                 </image></ImageView>
+                                            <image>
+                                                <Image url="@../images/project.png" />
+                                            </image></ImageView>
                                     </graphic>
                                 </Button>
                                 <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="trans-btn-transparent-border, sideBarItem" stylesheets="@../styles/styles.css" text="View Work Sessions">
@@ -124,18 +124,18 @@
                                     </font>
                                     <graphic>
                                         <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../images/session.png" />
-                                 </image></ImageView>
+                                            <image>
+                                                <Image url="@../images/session.png" />
+                                            </image></ImageView>
                                     </graphic>
                                 </Button>
                             </children>
                         </VBox>
-                  <Label layoutX="34.0" layoutY="20.0" text="Admin Panel" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="17.0" />
-                     </font>
-                  </Label>
+                        <Label layoutX="34.0" layoutY="20.0" text="Admin Panel" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                        </Label>
                     </children>
                 </AnchorPane>
             </left>
@@ -151,28 +151,28 @@
                             </VBox.margin>
                             <children>
                                 <HBox prefHeight="435.0" prefWidth="627.0" styleClass="container" stylesheets="@../styles/styles.css">
-                           <children>
-                              <Label text="USERS LIST" textFill="#151928">
-                                 <HBox.margin>
-                                    <Insets />
-                                 </HBox.margin>
-                                 <font>
-                                    <Font name="System Bold" size="16.0" />
-                                 </font>
-                              </Label>
-                              <TableView fx:id="usersTable" prefHeight="375.0" prefWidth="573.0">
-                                <columns>
-                                  <TableColumn fx:id="idCol" prefWidth="51.33334219455719" text="User ID" />
-                                  <TableColumn fx:id="usernameCol" prefWidth="179.9999656677246" text="Username " />
-                                    <TableColumn fx:id="roleCol" prefWidth="115.0" text="Role" />
-                                    <TableColumn fx:id="statusCol" prefWidth="115.0" text="Status" />
-                                    <TableColumn fx:id="actionCol" prefWidth="110.0" text="Action" />
-                                </columns>
-                                 <HBox.margin>
-                                    <Insets top="55.0" />
-                                 </HBox.margin>
-                              </TableView>
-                           </children></HBox>
+                                    <children>
+                                        <Label text="WORK SESSIONS" textFill="#151928">
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="System Bold" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TableView fx:id="sessionsTable" prefHeight="380.0" prefWidth="592.0">
+                                            <columns>
+                                                <TableColumn fx:id="sessionIdCol" prefWidth="67.33334350585938" text="Session ID" />
+                                                <TableColumn fx:id="projectIdCol" prefWidth="68.66665649414062" text="Project ID" />
+                                                <TableColumn fx:id="startTimeCol" prefWidth="148.0" text="Start Time" />
+                                                <TableColumn fx:id="endTimeCol" prefWidth="144.66668701171875" text="End Time" />
+                                                <TableColumn fx:id="durationCol" prefWidth="165.33331298828125" text="Duration (Minutes)" />
+                                            </columns>
+                                            <HBox.margin>
+                                                <Insets top="55.0" />
+                                            </HBox.margin>
+                                        </TableView>
+                                    </children></HBox>
                             </children>
                         </VBox>
                     </children>

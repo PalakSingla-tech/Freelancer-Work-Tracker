@@ -58,7 +58,7 @@ public class AdminPanel {
 
             int rows = stmt.executeUpdate();
             if (rows > 0) {
-                System.out.println("User deleted successfully!");
+                System.out.println("controller.User deleted successfully!");
             } else {
                 System.out.println("No user found with that ID.");
             }

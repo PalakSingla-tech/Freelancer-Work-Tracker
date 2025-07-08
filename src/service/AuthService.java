@@ -5,9 +5,9 @@ import java.util.Scanner;
 import java.util.regex.*;
 
 public class AuthService {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/freelancer_tracker";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "2830@412Ps";
+    public static final String DB_URL = "jdbc:mysql://localhost:3306/freelancer_tracker";
+    public static final String DB_USER = "root";
+    public static final String DB_PASSWORD = "2830@412Ps";
 
     public static final String ADMIN_SECRET_KEY = "ADMIN123KEY";  // Store securely in real projects
     // MySQL Connection
@@ -40,7 +40,7 @@ public class AuthService {
         return true;
     }
 
-    // Registering User
+    // Registering controller.User
     public boolean registerUser(String username, String password, String role) {
         if (!isPasswordValid(password)) {
             System.out.println("Registration failed due to invalid password");
@@ -73,7 +73,7 @@ public class AuthService {
         }
     }
 
-    // Logging in User
+    // Logging in controller.User
     public String loginUser(String username, String password) {
         try (Connection conn = getConnection()) {
             if (conn == null) return null;
