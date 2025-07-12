@@ -5,11 +5,11 @@ import java.util.Scanner;
 import java.util.regex.*;
 
 public class AuthService {
-    public static final String DB_URL = "jdbc:mysql://localhost:3306/freelancer_tracker";
+    public static final String DB_URL = //your url";
     public static final String DB_USER = "root";
-    public static final String DB_PASSWORD = "2830@412Ps";
+    public static final String DB_PASSWORD = //your password;
 
-    public static final String ADMIN_SECRET_KEY = "ADMIN123KEY";  // Store securely in real projects
+    public static final String ADMIN_SECRET_KEY = //your admin secret key for accessing the admin dashboard; 
     // MySQL Connection
     public static Connection getConnection() {
         try {
