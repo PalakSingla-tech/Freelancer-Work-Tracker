@@ -7,9 +7,9 @@ import java.sql.ResultSet;
 
 
 public class AdminService {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/freelancer_tracker";
+    private static final String DB_URL = //your url;
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "2830@412Ps";
+    private static final String DB_PASSWORD = //your db password;
 
     public int getActiveUserCount() {
         int count = 0;
