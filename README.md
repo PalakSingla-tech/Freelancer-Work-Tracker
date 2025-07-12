@@ -36,7 +36,7 @@ Authenticated users can:
 
 - **Reports**:
   - View **weekly reports** of work sessions
-  - View **monthly reports** showing total time worked per project or client
+  - View **monthly reports** showing total time worked
 
 ---
 
