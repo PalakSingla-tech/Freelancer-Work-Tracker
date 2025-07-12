@@ -63,7 +63,7 @@ public class LoginController {
             Parent root = FXMLLoader.load(getClass().getResource(fxml));
             Stage stage = (Stage) usernameField.getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle(role.toUpperCase() + " Dashboard");
+            stage.setTitle(role + " dashboard");
         } catch (Exception e) {
             e.printStackTrace();
             showErrorPopup("Error","Error loading dashboard");

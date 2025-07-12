@@ -102,7 +102,6 @@ public class ViewUsersController implements Initializable{
 
             stmt.setInt(1, user.getUserId());
             stmt.executeUpdate();
-            System.out.println("Deleted user: " + user.getUsername());
 
         } catch (SQLException e) {
             e.printStackTrace();

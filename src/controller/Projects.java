@@ -5,7 +5,7 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class Projects {
     private final SimpleIntegerProperty projectId;
-    private final SimpleStringProperty projectName;
+    private String projectName;
     private final SimpleStringProperty clientName;
     private final SimpleIntegerProperty hourlyRate;
     private final SimpleStringProperty deadline;
@@ -13,7 +13,7 @@ public class Projects {
 
     public Projects(int projectId, String projectName, String clientName, int hourlyRate, String deadline, int totalHours) {
         this.projectId = new SimpleIntegerProperty(projectId);
-        this.projectName = new SimpleStringProperty(projectName);
+        this.projectName = new String(projectName);
         this.clientName = new SimpleStringProperty(clientName);
         this.hourlyRate = new SimpleIntegerProperty(hourlyRate);
         this.deadline = new SimpleStringProperty(deadline);
@@ -21,9 +21,11 @@ public class Projects {
     }
 
     public int getProjectId() { return projectId.get(); }
-    public String getProjectName() { return projectName.get(); }
+    public String getProjectName() { return projectName; }
     public String getClientName() { return clientName.get(); }
     public int getHourlyRate() { return hourlyRate.get(); }
     public String getDeadline() { return deadline.get(); }
     public int getTotalHours() { return totalHours.get(); }
+
+    public void setProjectName(String projectName) { this.projectName = projectName;}
 }

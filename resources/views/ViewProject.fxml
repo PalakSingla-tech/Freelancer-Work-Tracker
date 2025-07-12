@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="527.0" prefWidth="902.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewProjectController">
+    <content>
+        <AnchorPane prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+                            <children>
+                                <Pane layoutX="120.0" layoutY="17.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #151928;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                <HBox layoutX="241.0" layoutY="-13.0" prefHeight="43.0" prefWidth="525.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                                    <children>
+                                        <Label fx:id="logout" text="LOGOUT" textFill="#151928">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="430.0" top="6.0" />
+                                            </HBox.margin>
+                                            <graphic>
+                                                <ImageView fitHeight="27.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/logout.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Label>
+                                    </children></HBox>
+                                <Label fx:id="Menu" layoutX="14.0" layoutY="32.0" text="MENU" textFill="#151928">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/burger.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Label>
+                                <Label fx:id="MenuBack" layoutX="14.0" layoutY="32.0" text="MENU" textFill="#151928" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="13.999999999999957" AnchorPane.rightAnchor="617.3333333333334" AnchorPane.topAnchor="32.0">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/burger.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </top>
+                    <left>
+                        <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #151928;" BorderPane.alignment="CENTER">
+                            <children>
+                                <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                                    <children>
+                                        <Button fx:id="dashboardBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="trans-btn-transparent-border, sideBarItem" stylesheets="@../styles/styles.css" text="Dashboard">
+                                            <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/home.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="addProjectBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="trans-btn-transparent-border, sideBarItem" stylesheets="@../styles/styles.css" text="Add Project">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/project.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="viewProjectsBtn" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="trans-btn-transparent-border, sideBarItem" stylesheets="@../styles/styles.css" text="View Projects">
+                                            <VBox.margin>
+                                                <Insets bottom="-130.0" top="10.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/project.png" />
+                                                    </image></ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="addClientBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="130.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="trans-btn-transparent-border, sideBarItem" stylesheets="@../styles/styles.css" text="Add Client">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/user1.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets top="150.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button fx:id="viewClientsBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="trans-btn-transparent-border, sideBarItem" stylesheets="@../styles/styles.css" text="View Clients">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/user1.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets top="20.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button fx:id="startStopBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="440.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="trans-btn-transparent-border, sideBarItem" stylesheets="@../styles/styles.css" text="Work Sessions">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                            <graphic>
+                                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/session.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <VBox.margin>
+                                                <Insets bottom="-130.0" top="20.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </left>
+                    <center>
+                        <VBox prefHeight="569.0" prefWidth="504.0" BorderPane.alignment="CENTER">
+                            <BorderPane.margin>
+                                <Insets bottom="10.0" right="10.0" top="10.0" />
+                            </BorderPane.margin>
+                     <children>
+                        <Label text="PROJECTS LIST">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TableView fx:id="projectTable" prefHeight="339.0" prefWidth="527.0">
+                          <columns>
+                            <TableColumn fx:id="projectIdCol" prefWidth="61.33331298828125" text="Project ID" />
+                            <TableColumn fx:id="projectNameCol" prefWidth="146.0" text="Project Name" />
+                              <TableColumn fx:id="clientNameCol" prefWidth="116.66671752929688" text="Client Name" />
+                              <TableColumn fx:id="hourlyRateCol" prefWidth="74.0" text="Hourly Rate" />
+                              <TableColumn fx:id="deadlineCol" prefWidth="86.66668701171875" text="Deadline" />
+                              <TableColumn fx:id="totalHoursCol" prefWidth="77.3333740234375" text="Total Hours" />
+                              <TableColumn fx:id="actionCol" prefWidth="115.33331298828125" text="Action" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets left="20.0" top="40.0" />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                        </VBox>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>

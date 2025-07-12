@@ -10,10 +10,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/SignUp.fxml"));
         Scene scene = new Scene(loader.load());
-        scene.setFill(Color.TRANSPARENT);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Login/Register");
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
     }
 

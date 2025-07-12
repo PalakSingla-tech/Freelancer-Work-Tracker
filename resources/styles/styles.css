@@ -62,3 +62,32 @@
     -fx-border-radius: 10;
 }
 
+.date-picker {
+    -fx-background-color: #151928;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.date-picker > .text-field {
+    -fx-background-color: #151928;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 5 5 0;
+}
+
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color: white;
+}
+
+.text-area {
+    -fx-background-color: #f2f2f2;
+    -fx-border-color: #ccc;
+}
+
+
+

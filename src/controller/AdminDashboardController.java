@@ -26,9 +26,6 @@ import java.util.ResourceBundle;
 
 public class AdminDashboardController implements Initializable {
     @FXML
-    private ImageView Exit;
-
-    @FXML
     private Label Menu;
 
     @FXML
@@ -67,9 +64,6 @@ public class AdminDashboardController implements Initializable {
 
         int ongoingProject = adminService.getOngoingProjectCount();
         ongoingProjectLabel.setText(String.valueOf(ongoingProject));
-        Exit.setOnMouseClicked(event -> {
-            System.exit(0);
-        });
 
         logout.setOnMouseClicked(event -> {
             try {
@@ -125,6 +119,7 @@ public class AdminDashboardController implements Initializable {
                 // Load the login/register screen
                 Parent root = FXMLLoader.load(getClass().getResource("/views/ViewUsers.fxml"));
                 Stage stage = new Stage();
+                stage.setTitle("View Users");
                 stage.setScene(new Scene(root));
                 stage.show();
             } catch (IOException e) {
@@ -137,6 +132,7 @@ public class AdminDashboardController implements Initializable {
                 // Load the login/register screen
                 Parent root = FXMLLoader.load(getClass().getResource("/views/ViewProjects.fxml"));
                 Stage stage = new Stage();
+                stage.setTitle("View Projects");
                 stage.setScene(new Scene(root));
                 stage.show();
             } catch (IOException e) {
@@ -149,6 +145,7 @@ public class AdminDashboardController implements Initializable {
                 // Load the login/register screen
                 Parent root = FXMLLoader.load(getClass().getResource("/views/ViewWorkSessions.fxml"));
                 Stage stage = new Stage();
+                stage.setTitle("View Work Sessions");
                 stage.setScene(new Scene(root));
                 stage.show();
             } catch (IOException e) {
