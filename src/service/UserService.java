@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 
 public class UserService {
-    private static final String DB_URL = // your db url;
+    private static final String DB_URL = // your database url;
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = // your db password;
 
